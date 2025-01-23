@@ -12,7 +12,7 @@ const formData = ref({
   password: '',
 })
 const loading = ref(false)
-const token = ref([])
+const token = ref('')
 
 const authStore = useAuthStore()
 const router = useRouter()

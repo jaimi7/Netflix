@@ -10,7 +10,7 @@ export const useAuthStore = defineStore({
   }),
 
   actions: {
-    async loginUser(email, password) {
+    loginUser(email, password) {
       this.loginLoading = true
       const user = { email: email, password: password }
       this.userData = JSON.stringify(user)
@@ -18,11 +18,19 @@ export const useAuthStore = defineStore({
       localStorage.setItem('user', JSON.stringify(this.userData))
     },
 
-    async logOut() {
+    logOut() {
       this.logOutLoading = true
       this.userData = null
       this.logOutLoading = false
       localStorage.removeItem('user')
+    },
+
+    registerUser(email, password) {
+      this.registerLoading = true
+      const user = { email: email, password: password }
+      this.userData = JSON.stringify(user)
+      this.registerLoading = false
+      localStorage.setItem('user', JSON.stringify(this.userData))
     },
   },
 })

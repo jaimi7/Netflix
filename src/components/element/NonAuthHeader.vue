@@ -2,7 +2,7 @@
   <div>
     <div>
       <img
-        src="../../assets/img/bg.jpg"
+        src="@/assets/img/bg.jpg"
         alt="Netflix"
         class="w-full h-full bg-cover opacity-60 bg-center bg-no-repeat absolute -z-20"
       />
@@ -10,7 +10,7 @@
     <header>
       <nav class="flex justify-between items-center w-full h-14 p-2 md:p-8">
         <div>
-          <img src="../../assets/img/header.png" alt="Netflix" class="w-32 h-16 md:w-40 md:h-20" />
+          <img src="@/assets/img/header.png" alt="Netflix" class="w-32 h-16 md:w-40 md:h-20" />
         </div>
 
         <div>

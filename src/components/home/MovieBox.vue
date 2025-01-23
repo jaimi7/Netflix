@@ -1,5 +1,5 @@
 <script setup>
-import Axios from '../../plugin/axios/axios'
+import Axios from '@/plugin/axios/axios'
 import { ref } from 'vue'
 
 const baseURL = 'https://image.tmdb.org/t/p/original/'

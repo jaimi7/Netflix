@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { useAuthStore } from '../stores/authStore'
+import { useAuthStore } from '@/stores/authStore'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,19 +7,19 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/MainHome.vue'),
+      component: () => import('@/views/MainHome.vue'),
       meta: { auth: true },
     },
     {
       path: '/login',
       name: 'login',
-      component: () => import('../views/LogIn.vue'),
+      component: () => import('@/views/LogIn.vue'),
       meta: { auth: false },
     },
     {
       path: '/register',
       name: 'register',
-      component: () => import('../views/NewRegistration.vue'),
+      component: () => import('@/views/NewRegistration.vue'),
       meta: { auth: false },
     },
   ],

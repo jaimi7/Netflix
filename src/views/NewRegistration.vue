@@ -1,7 +1,7 @@
 <script setup>
 import { computed, ref, watchEffect } from 'vue'
-import NonAuthHeader from '../components/element/NonAuthHeader.vue'
-import { useAuthStore } from '../stores/authStore'
+import NonAuthHeader from '@/components/element/NonAuthHeader.vue'
+import { useAuthStore } from '@/stores/authStore'
 import { useRouter } from 'vue-router'
 
 import useVuelidate from '@vuelidate/core'
@@ -55,7 +55,7 @@ watchEffect(() => {
       >
         <form class="bg-black/75 w-full px-6 py-4 rounded-md" @submit.prevent="handleSubmit">
           <div class="grid-layout pb-4">
-            <img src="../assets/img/favicon.png" alt="Netflix" class="w-10 h-10" />
+            <img src="@/assets/img/favicon.png" alt="Netflix" class="w-10 h-10" />
           </div>
           <div class="pb-6">
             <label for="Email" class="label">Email</label>

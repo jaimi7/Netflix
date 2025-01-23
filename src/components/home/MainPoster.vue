@@ -1,7 +1,7 @@
 <script setup>
 import { PlayIcon, ExclamationCircleIcon } from '@heroicons/vue/24/solid'
-import Axios from '../../plugin/axios/axios'
-import api from '../../plugin/apis/movie'
+import Axios from '@/plugin/axios/axios'
+import api from '@/plugin/apis/movie'
 import { ref } from 'vue'
 
 const baseURL = 'https://image.tmdb.org/t/p/original/'

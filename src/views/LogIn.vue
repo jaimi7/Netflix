@@ -76,7 +76,7 @@ watchEffect(() => {
             <p class="cursor-pointer text-gray-400 text-sm md:text-base">
               Don't have an account yet?
               <span class="text-gray-300 hover:text-red-600 transition duration-200 ease-in">
-                <router-link to="/">Register</router-link>
+                <router-link to="/register">Register</router-link>
               </span>
             </p>
           </div>

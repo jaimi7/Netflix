@@ -33,3 +33,19 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Node packages
+
+#### TailwindCss (https://tailwindcss.com/)
+
+```bash
+npm install -D tailwindcss@3.1.8 postcss@8.4.16 autoprefixer@10.4.8
+```
+
+```bash
+npx tailwindcss init -p
+```
+
+```bash
+npm i @tailwindcss/line-clamp
+```

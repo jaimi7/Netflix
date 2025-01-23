@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <div>Netfix</div>
+  <div></div>
 </template>

@@ -3,6 +3,7 @@ import api from '../plugin/apis/movie'
 import Navbar from '../components/element/NavBar.vue'
 import MainPoster from '../components/home/MainPoster.vue'
 import MovieBox from '../components/home/MovieBox.vue'
+import LoaderSpinar from '../components/element/LoaderSpinar.vue'
 </script>
 
 <template>
@@ -21,6 +22,10 @@ import MovieBox from '../components/home/MovieBox.vue'
         <MovieBox title="Animation Movies" :fetchUrl="api.getAnimationMovies" />
         <MovieBox title="Documentaries" :fetchUrl="api.getDocumentaries" />
       </div>
+
+      <template #fallback>
+        <LoaderSpinar />
+      </template>
     </Suspense>
   </div>
 </template>

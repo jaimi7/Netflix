@@ -57,7 +57,7 @@ watchEffect(() => {
         <MagnifyingGlassIcon class="icon-style" />
         <BellIcon class="icon-style" />
         <img
-          src=".@/assets/img/avatar.png"
+          src="@/assets/img/avatar.png"
           alt="Avatar"
           class="cursor-pointer w-8 h-8 rounded-md"
           @click="handleLogOut()"

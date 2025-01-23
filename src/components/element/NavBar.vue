@@ -39,7 +39,7 @@ watchEffect(() => {
     >
       <div class="flex-center space-x-3">
         <div>
-          <img src="../assets/img/header.png" alt="Netflix" class="w-32 h-14" />
+          <img src="../../assets/img/header.png" alt="Netflix" class="w-32 h-14" />
         </div>
 
         <div class="hidden lg:block">
@@ -57,7 +57,7 @@ watchEffect(() => {
         <MagnifyingGlassIcon class="icon-style" />
         <BellIcon class="icon-style" />
         <img
-          src="../assets/img/avatar.png"
+          src="../../assets/img/avatar.png"
           alt="Avatar"
           class="cursor-pointer w-8 h-8 rounded-md"
           @click="handleLogOut()"
@@ -76,7 +76,7 @@ watchEffect(() => {
         <ul v-show="isMobileView" class="sidebar space-y-6 px-4 py-1">
           <div class="flex-between p-1">
             <div>
-              <img src="../assets/img/header.png" alt="Netflix" class="w-32 h-14" />
+              <img src="../../assets/img/header.png" alt="Netflix" class="w-32 h-14" />
             </div>
 
             <div>
@@ -90,7 +90,7 @@ watchEffect(() => {
           <li class="navbarLink"><router-link to="/list">My List</router-link></li>
           <li class="navbarLink">
             <img
-              src="../assets/img/avatar.png"
+              src="../../assets/img/avatar.png"
               alt="Avatar"
               class="cursor-pointer w-8 h-8 rounded-md"
               @click="handleLogOut()"

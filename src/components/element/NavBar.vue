@@ -87,7 +87,7 @@ watchEffect(() => {
           <li class="navbarLink"><router-link to="/">Tv Shows</router-link></li>
           <li class="navbarLink"><router-link to="/">Movies</router-link></li>
           <li class="navbarLink"><router-link to="/">New & Popular</router-link></li>
-          <li class="navbarLink"><router-link to="/list">My List</router-link></li>
+          <li class="navbarLink"><router-link to="/">My List</router-link></li>
           <li class="navbarLink">
             <img
               src="../../assets/img/avatar.png"

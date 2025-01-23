@@ -92,4 +92,8 @@
   .error {
     @apply font-bold text-red-500 py-2;
   }
+
+  .label {
+    @apply text-white block;
+  }
 }

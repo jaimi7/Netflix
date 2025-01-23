@@ -1,9 +1,11 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watchEffect } from 'vue'
 import NonAuthHeader from '../components/element/NonAuthHeader.vue'
+import { useAuthStore } from '../stores/authStore'
 
 import useVuelidate from '@vuelidate/core'
 import { required, helpers, email, minLength } from '@vuelidate/validators'
+import { useRouter } from 'vue-router'
 
 const formData = ref({
   email: '',
@@ -11,6 +13,9 @@ const formData = ref({
 })
 const loading = ref(false)
 const token = ref([])
+
+const authStore = useAuthStore()
+const router = useRouter()
 
 const rules = computed(() => {
   return {
@@ -25,10 +30,14 @@ const validator = useVuelidate(rules, formData)
 
 const handleSubmit = async () => {
   const result = await validator.value.$validate()
-  if (result) {
-    console.log('login')
-  }
+  if (result) authStore.loginUser(formData.value.email, formData.value.password)
 }
+
+watchEffect(() => {
+  loading.value = authStore.loginLoading
+  token.value = authStore.userData
+  if (token.value) router.push('/')
+})
 </script>
 
 <template>
